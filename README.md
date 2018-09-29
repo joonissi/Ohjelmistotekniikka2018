@@ -1,4 +1,6 @@
-# Ohjelmistotekniikan menetelmät, syksy 2018
+# Ohjelmistotekniikka, syksy 2018
+
+_Ohjelmistotekniikan menetelmät_
 
 ## Yleistä
 
