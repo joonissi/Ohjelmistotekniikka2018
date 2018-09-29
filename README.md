@@ -1,6 +1,6 @@
 # Ohjelmistotekniikka, syksy 2018
 
-_Ohjelmistotekniikan menetelmät_
+_Kurssin nimi on muuttunut, ennen tätä syksyä kurssi tunnettiin nimellä Ohjelmistotekniikan menetelmät_
 
 ## Yleistä
 
