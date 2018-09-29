@@ -97,6 +97,8 @@ Palautuksen deadline ti 4.12. klo 23:59
   - Testikattavuus nousee 
   - Jotain päätoiminnallisuutta kuvaava sekvenssikaavio 
 - Tarkemmat ohjeet [täältä](https://github.com/mluukkai/Ohjelmistotekniikka2018/blob/master/tehtavat/harjoitustyo_viikko5.md) 
+- Koodikatselmointi (2p)
+  - [Koodikatselmointi](https://github.com/mluukkai/Ohjelmistotekniikka2018/blob/master/web/koodikatselmointi.md)
 
 ### viikko 6
 
@@ -108,8 +110,6 @@ Palautuksen deadline to 11.12. klo 23:59
   - JavaDoc aloitettu 
   - Alustava versio arkkitehtuuridokumentista 
 - Tarkemmat ohjeet [täältä](https://github.com/mluukkai/Ohjelmistotekniikka2018/blob/master/tehtavat/harjoitustyo_viikko6.md) 
-- Koodikatselmointi (2p)
-  - [Koodikatselmointi](https://github.com/mluukkai/Ohjelmistotekniikka2018/blob/master/web/koodikatselmointi.md)
 
 ### viikko 7
 
