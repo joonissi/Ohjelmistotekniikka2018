@@ -113,7 +113,7 @@ Palautuksen deadline to 11.12. klo 23:59
 
 ### viikko 7
 
-Lopullisen palautuksen deadline lauantai 22.5. klo 23:59
+Lopullisen palautuksen deadline lauantai 22.12. klo 23:59
 
 - [loppupalautuksen ohjeet](https://github.com/mluukkai/Ohjelmistotekniikka2018/blob/master/tehtavat/harjoitustyo_viikko7.md) 
 
