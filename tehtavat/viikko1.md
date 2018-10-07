@@ -438,6 +438,9 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 - poista tiedosto _file1_ ja uudelleennimeä tiedosto _file2_ tiedostoksi _file22_
 - committoi 
 
+Suorita repositoriossa komento _git log --stat | cat_ ja **ota komennon tulos talteen**, tulet tarvitsemaan sitä myöhemmin!
+
+
 ## GitHub 
 
 Gitin käytöstä on toki hyötyä jo harjoittelemallammekin tavalla, eli muodostamalla paikallisen koneen hakemistosta repositorio. Pääsemme kuitenkin nauttimaan kertaluokkaa suuremmista hyödyistä liittämällä repositoriomme internetissä olevaan _etärepositorioon_. Etärepositorion kautta repositorion tiedostot on helppo jakaa useiden koneiden tai/ja useiden käyttäjien kesken.
@@ -446,12 +449,12 @@ Internetin johtava paikka etärepositorioiden tallettamiseen on [GitHub](https:/
 
 Ennen GitHubin käytöönottoa, tee uusi git-repositorio paikalliselle koneelle, seuraavassa oletetaan että hakemiston nimi on _ot-harjoitustyo_. 
 
-**HUOM:** älä luo uutta repositoriota aiemmin tekemäsi harjoitusrepositorion sisälle!
+**HUOM: älä luo uutta repositoriota aiemmin tekemäsi harjoitusrepositorion sisälle!**
 
-Seuraavat komennot siirtyvät kotihakemistoon, luovat sen alle hakemiston _ot-harjoitustyo_, siirtyvät hakemistoon, alustavat sen git-repositorioksi sekä lisäävät ja commitoivat yhden tiedoston repositorioon:
+Esim. seuraavat komennot siirtyvät kotihakemistoon, luovat sen alle hakemiston _ot-harjoitustyo_, siirtyvät hakemistoon, alustavat sen git-repositorioksi sekä lisäävät ja commitoivat yhden tiedoston repositorioon:
 
 <pre>
-cd ~   
+cd 
 mkdir ot-harjoitustyo
 cd ot-harjoitustyo
 git init
@@ -467,7 +470,7 @@ Siirrytään sitten GitHubin käyttöön
   * uuden repositorion luomistoiminto löytyy vasemman ylänurkan plus-symboolin alta
 * **Älä laita rastia** kohtaan *Initialize this repository with a README*
 
-![](https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/v1-1b.png)
+![](https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/lh1-2a.png)
 
 * luo repositorio painamalla vihreää _Create repository_ -nappia
 
@@ -476,7 +479,7 @@ Seuraavaksi haluamme liittää GitHubiin luodun repositorion juuri luodun paikal
 * etärepositorion lisääminen onnistuu GitHubiin avautuvan näkymän ohjeiden mukaan 
 * varmista, että kohdasta "Quick setup..." on valittu **SSH**
 
-![](https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka20188/master/web/images/v1-2.png)
+![](https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/lh1-3a.png)
 
 - kopioi ylempi rivi kohdasta *...or push an existing repository from the command line*
 - omassa esimerkissäni rivi on
@@ -531,12 +534,14 @@ Pushaus ei toimi. Nyt kyse on siitä, että git haluaisi suorittaa [julkisen ava
 
 ```
 mluukkai@melkki:~/ot-harjoitustyo$ git push
-Counting objects: 8, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (4/4), done.
-Writing objects: 100% (8/8), 714 bytes | 0 bytes/s, done.
-Total 8 (delta 0), reused 0 (delta 0)
-To git@github.com:mluukkai/ot-harjoitustyo.git
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 213 bytes | 106.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/mluukkai/ot-harjoitustyo/pull/new/master
+remote:
+To github.com:mluukkai/ot-harjoitustyo.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 ``` 
@@ -545,12 +550,12 @@ Branch master set up to track remote branch master from origin.
 
 ## Lisää tiedostoja
 
-* tee repositorion sisälle hakemisto _laskarit_
+* tee juuri luodun repositorion sisälle hakemisto _laskarit_
   * ja sen sisälle hakemisto _viikko1_
   * Komentorivitehtävien lopussa oli kehotus: Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. _Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
   * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _komentorivi.txt_ ja kopioi sinne komennon _tree_ tulos
-  * Mene edellisen tehtäväsarjan git-harjoitusrepositorioon ja anna siellä komento _git log --stat | cat_
-  * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _gitlog.txt_ ja kopioi sinne edellisen bulletin komennon tulos
+  * Edellisen tehtäväsarjan lopussa kehoitettiin tallentamaan harjoitusrepositoriossa annetun komennon _git log --stat | cat_ tulos
+  * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _gitlog.txt_ ja kopioi sinne githarjoittelun tulos
 * Kirjoita jotain tekstiä hakemiston juuressa olevaan tiedostoon README.md
   * muotoile tekstisi [markdown-notaatiota](https://guides.github.com/features/mastering-markdown/) käyttäen
   * tee tiedostoon esim. jokin otsikko, tavallista tekstiä, joka sisältää lihavoituja ja kursivoituja osuuksia
@@ -570,7 +575,7 @@ Branch master set up to track remote branch master from origin.
   * tiedostojen urlin saat navigoimalla GitHubissa tiedostoon ja kopioimalla osoitteen selaimen osoiteriviltä 
 * Repositoriosi tulee näyttää suunnilleen seuraavalta
 
-![](https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/v1-3.png)
+![](https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/lh1-4a.png)
 
 * jos teit kaiken oikein, pääset README.md:ssä olevia linkkejä klikkaamalla näkemään linkitettyjen tiedostojen sisällön
 
@@ -631,9 +636,9 @@ Nyrkkisääntönä kannattaa pitää aina sitä, että kun rupeat työskentelem�
 
 ## Labtool
 
-Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin](https://tktl-labtool.herokuapp.com/register). Valitse kurssiksi _Ohjelmistotekniikka_.
+Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin](https://studies.cs.helsinki.fi/labtool/courses/TKT20002.2018.S.K.1). Valitse kurssiksi _Ohjelmistotekniikka_ jos joudut tekemään valinnan. 
 
-Labtool kysyy myös harjoitustyön aihetta (=topic). Voit jättää kohdan tyhjäksi, jos et ole vielä päättänyt mitä aiot tehdä.
+Labtool kysyy myös harjoitustyön aihetta, jos et ole vielä varma aiheestasi voit muuttaa aiheen nimeä myöhemmin.
 
 ## Lisää gitiä
 
