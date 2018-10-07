@@ -46,16 +46,16 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 * luo kotihakemistoosi hakemisto _kurssit_
   * **HUOM** joidenkin kohdalla melkillä on ollut ongelmia kotihakemiston asetuksissa ja esim. hakemiston luomisen seurauksena on virhe 'permission denied'. Jos törmäät ongelmaan, lähetä viesti osoitteeseen _it-support@cs.helsinki.fi_ ja raportoi ongelmaksi "ei oikeuksia kotihakemistoon melkillä"
   * kokeile myös jos kirjaantuminen toiselle koneelle, esim. _melkinpaasi.cs.helsinki.fi_ tuottaisi paremman tuloksen
-* luo hakemistolle _kurssit_ alihakemisto _otm2018_
+* luo hakemistolle _kurssit_ alihakemisto _ot2018_
 * ja luomallesi hakemistolle alihakemisto _viikko1_
 * mene kotihakemistoosi ja luo sen alle hakemisto _temp_
 * mene hakemistoon _temp_
-* hae osoitteessa _https://raw.githubusercontent.com/mluukkai/otm-2018/master/misc/Unicafe.zip_ oleva tiedosto [wget](https://en.wikipedia.org/wiki/Wget)-ohjelmalla
+* hae osoitteessa _https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/misc/Unicafe.zip_ oleva tiedosto [wget](https://en.wikipedia.org/wiki/Wget)-ohjelmalla
   * wget toimii siten, että sille annetaan ladattava tiedosto parametriksi
 * haettu tiedosto on _zip-paketti_, pura se _unzip_-ohjelmalla
   * myös unzip toimii siten, että sille annetaan purettava tiedosto parametriksi
 * komennon suorittamisen jälkeen hakemistoon on ilmestynyt hakemisto _Unicafe_
-* siirrä hakemisto hakemiston _kurssit/otm2018/viikko1_ alihakemistoksi
+* siirrä hakemisto hakemiston _kurssit/ot2018/viikko1_ alihakemistoksi
 * poista zip-paketti
 * poista hakemisto _temp_
 * mene nyt uudessa paikassa olevaan hakemistoon _Unicafe_
@@ -123,8 +123,8 @@ Tämä liittyy _git push_ -komennon oletusarvoiseen toiminnallisuuteen. Komennos
 ### repositorio
 
 Tee nyt sopiva hakemisto gitin harjoittelua varten ja mene hakemistoon, eli anna esim. komennot:
-* mkdir otm_viikko1
-* cd otm_viikko1
+* mkdir ot_viikko1
+* cd ot_viikko1
 
 **HUOM:** varmista nyt että olet luomassasi hakemistossa, eli jos suoritat komennon _ls_, ei hakemistossa pitäisi olla mitään.
 
@@ -133,21 +133,21 @@ Luodaan hakemistosta paikallinen _git-repositorio_ antamalla komento <code>git i
 Git ilmoittaa alustaneensa repositorion:
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko1$ git init
-Initialised empty Git repository in /home/ad/fshome4/u4/m/mluukkai/Linux/otm_viikko1/.git/
+mluukkai@melkinpaasi:~/ot_viikko1$ git init
+Initialised empty Git repository in /home/ad/fshome4/u4/m/mluukkai/Linux/ot_viikko1/.git/
 </pre>
 
 Jos katsot hakemiston sisältöä komennolla <code>ls -la</code> huomaat, että hakemiston sisälle on ilmestynyt hakemisto <code>.git</code>. Git käyttää luotua hakemistoa pitääkseen kirjaa repositorioon talletetuista tiedostoista.
 
 **HUOM** koska hakemiston nimi (_.git_) alkaa pisteellä, ei komento _ls_ näytä sitä oletusarvoisesti. Parametri _a_ näyttää myös pisteellä alkavat tiedostot ja hakemistot. Kokeile, miten _ls -a_ ja _ls -la_ eroavat toisistaan!
 
-Pysy edelleen repositorion sisältävässä hakemistossasi _otm_viikko1_.
+Pysy edelleen repositorion sisältävässä hakemistossasi _ot_viikko1_.
 
 Luo hakemistoon tiedosto nimeltään _tiedosto.txt_, esim. komennolla <code>touch</code>. Luotuasi tiedoston, suorita komento <code>git status</code>:
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko1$ touch tiedosto.txt
-mluukkai@melkinpaasi:~/otm_viikko1$ git status
+mluukkai@melkinpaasi:~/ot_viikko1$ touch tiedosto.txt
+mluukkai@melkinpaasi:~/ot_viikko1$ git status
 On branch master
 
 Initial commit
@@ -158,7 +158,7 @@ Untracked files:
 	tiedosto.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
-mluukkai@melkinpaasi:~/otm_viikko1$
+mluukkai@melkinpaasi:~/ot_viikko1$
 </pre>
 
 Git ilmoittaa, että on olemassa tiedosto, joka on tilassa _untracked_, eli tiedostoa ei ole lisätty versionhallinnan pariin.
@@ -168,8 +168,8 @@ Kuten komennon tuloste kertoo, tiedoston lisääminen gitin alaisuuteen (...to i
 Suorita lisäys ja sen jälkeen komento <code>git status</code>:
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko1$ git add tiedosto.txt
-mluukkai@melkinpaasi:~/otm_viikko1$ git status
+mluukkai@melkinpaasi:~/ot_viikko1$ git add tiedosto.txt
+mluukkai@melkinpaasi:~/ot_viikko1$ git status
 On branch master
 
 Initial commit
@@ -189,7 +189,7 @@ Commitoimisella tarkoitetaan tiedostojen ja hakemistojen sekä niihin liittyvien
 Suoritetaan commitointi antamalla komento <code>git commit -m "tiedosto.txt luotu"</code>
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko1$ git commit -m "tiedosto.txt luotu"
+mluukkai@melkinpaasi:~/ot_viikko1$ git commit -m "tiedosto.txt luotu"
 [master (root-commit) 0e12cfa] tiedosto.txt luotu
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 tiedosto.txt
@@ -198,7 +198,7 @@ mluukkai@melkinpaasi:~/otm_viikko1$ git commit -m "tiedosto.txt luotu"
 Suorita jälleen komento <code>git status</code>
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko1$ git status
+mluukkai@melkinpaasi:~/ot_viikko1$ git status
 On branch master
 nothing to commit, working directory clean
 </pre>
@@ -219,7 +219,7 @@ Kun teet muutoksia hakemistosi alla oleviin tiedostoihin (tai hakemistoihin), ko
 Suorita jälleen <code>git status</code>
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko1$ git status
+mluukkai@melkinpaasi:~/ot_viikko1$ git status
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -242,7 +242,7 @@ Toimitaan ohjeen mukaan eli lisätään muutokset ja uusi tiedosto commitoitavie
 Tarkistetaan taas tilanne komennolla <code>git status</code>
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko1$ git status
+mluukkai@melkinpaasi:~/ot_viikko1$ git status
 On branch master
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
@@ -277,7 +277,7 @@ Kun tiedosto luodaan, menee se gitin _working directoryyn_. Komennolla _git add_
 Jokainen komennon _git commit_ suorittaminen siis synnyttää repositorioon uuden commitin, eli uuden "tilan". Komennolla <code>git log</code> on mahdollista nähdä, mitä committeja repositorio sisältää:
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko1$ git log
+mluukkai@melkinpaasi:~/ot_viikko1$ git log
 commit 50c786fdc41104cdfe3e60845df40820feb33d40
 Author: Matti Luukkainen <mluukkai@iki.fi>
 Date:   Mon Feb 7 18:18:19 2018 +0200
@@ -289,7 +289,7 @@ Author: Luukkainen Matti <mluukkai@melkinpaasi.cs.helsinki.fi>
 Date:   Mon Feb 7 16:11:33 2018 +0200
 
     tiedosto.txt luotu
-mluukkai@melkinpaasi:~/otm_viikko1$
+mluukkai@melkinpaasi:~/ot_viikko1$
 </pre>
 
 Gitin logi kertoo jokaisen commitin ajan, tekijän, viestin ja _tunnisteen_. Tunnisteita käytetään, jos on esim. tarvetta palata johonkin vanhan commitin tilaan. 
@@ -358,7 +358,7 @@ Joskus tiedostoihin tulee tehtyä muutoksia, jotka on tarpeen perua
 * suorita komento *git status*
 
 ```bash
-mluukkai@melkinpaasi:~/otm_viikko1$ git status
+mluukkai@melkinpaasi:~/ot_viikko1$ git status
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -374,8 +374,8 @@ Kuten oletettua, git kertoo että olemme tehneet muutoksia, jotka eivät ole "st
 * Kun suoritat uudelleen komennon _git status_ huomaat, että working directory ei enää sisällä muutoksia:
 
 ```bash
-mluukkai@melkinpaasi:~/otm_viikko1$ git checkout -- eka.txt
-mluukkai@melkinpaasi:~/otm_viikko1$ git status
+mluukkai@melkinpaasi:~/ot_viikko1$ git checkout -- eka.txt
+mluukkai@melkinpaasi:~/ot_viikko1$ git status
 On branch master
 nothing to commit, working directory clean
 ```
@@ -387,14 +387,14 @@ Myös stagingiin viety eli valmiina committoitavaksi oleva muutos voidaan perua.
 * git statuksen pitäisi näyttää seuraavalta
 
 ``` bash
-mluukkai@melkinpaasi:~/otm_viikko1$ git status
+mluukkai@melkinpaasi:~/ot_viikko1$ git status
 On branch master
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
 	modified:   kolmas.txt
 
-mluukkai@melkinpaasi:~/otm_viikko1$
+mluukkai@melkinpaasi:~/ot_viikko1$
 ```
 
 Ohje muutoksen perumiseen löytyy git statuksen tulosteesta.
@@ -402,7 +402,7 @@ Ohje muutoksen perumiseen löytyy git statuksen tulosteesta.
 * katsotaan jälleen _git status_
 
 ``` pre
-mluukkai@melkinpaasi:~/otm_viikko1$ git status
+mluukkai@melkinpaasi:~/ot_viikko1$ git status
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -439,16 +439,16 @@ Gitin käytöstä on toki hyötyä jo harjoittelemallammekin tavalla, eli muodos
 
 Internetin johtava paikka etärepositorioiden tallettamiseen on [GitHub](https://github.com)
 
-Ennen GitHubin käytöönottoa, tee uusi git-repositorio paikalliselle koneelle, seuraavassa oletetaan että hakemiston nimi on _otm-harjoitustyo_. 
+Ennen GitHubin käytöönottoa, tee uusi git-repositorio paikalliselle koneelle, seuraavassa oletetaan että hakemiston nimi on _ot-harjoitustyo_. 
 
 **HUOM:** älä luo uutta repositoriota aiemmin tekemäsi harjoitusrepositorion sisälle!
 
-Seuraavat komennot siirtyvät kotihakemistoon, luovat sen alle hakemiston _otm-harjoitustyo_, siirtyvät hakemistoon, alustavat sen git-repositorioksi sekä lisäävät ja commitoivat yhden tiedoston repositorioon:
+Seuraavat komennot siirtyvät kotihakemistoon, luovat sen alle hakemiston _ot-harjoitustyo_, siirtyvät hakemistoon, alustavat sen git-repositorioksi sekä lisäävät ja commitoivat yhden tiedoston repositorioon:
 
 <pre>
 cd ~   
-mkdir otm-harjoitustyo
-cd otm-harjoitustyo
+mkdir ot-harjoitustyo
+cd ot-harjoitustyo
 git init
 touch README.md
 git add .
@@ -462,22 +462,22 @@ Siirrytään sitten GitHubin käyttöön
   * uuden repositorion luomistoiminto löytyy vasemman ylänurkan plus-symboolin alta
 * **Älä laita rastia** kohtaan *Initialize this repository with a README*
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v1-1b.png)
+![](https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/v1-1b.png)
 
 * luo repositorio painamalla vihreää _Create repository_ -nappia
 
-Seuraavaksi haluamme liittää GitHubiin luodun repositorion juuri luodun paikallisen koneen repositorion _otm-harjoitustyo_ etärepositorioksi.
+Seuraavaksi haluamme liittää GitHubiin luodun repositorion juuri luodun paikallisen koneen repositorion _ot-harjoitustyo_ etärepositorioksi.
 
 * etärepositorion lisääminen onnistuu GitHubiin avautuvan näkymän ohjeiden mukaan 
 * varmista, että kohdasta "Quick setup..." on valittu **SSH**
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v1-2.png)
+![](https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka20188/master/web/images/v1-2.png)
 
 - kopioi ylempi rivi kohdasta *...or push an existing repository from the command line*
 - omassa esimerkissäni rivi on
 
 ``` bash 
-git remote add origin git@github.com:mluukkai/otm-harjoitustyo.git
+git remote add origin git@github.com:mluukkai/ot-harjoitustyo.git
 ```
 
 - pastea rivi komentoriville ja suorita komento painamalla enter
@@ -485,9 +485,9 @@ git remote add origin git@github.com:mluukkai/otm-harjoitustyo.git
 - tulostus kertoo, että githubin etärepositorio on liitetty paikalliseen repositorioosi nimellä _origin_
 
 ```bash
-mluukkai@melkki:~/otm-harjoitustyo$ git remote  -v
-origin	git@github.com:mluukkai/otm-harjoitustyo.git (fetch)
-origin	git@github.com:mluukkai/otm-harjoitustyo.git (push)
+mluukkai@melkki:~/ot-harjoitustyo$ git remote  -v
+origin	git@github.com:mluukkai/ot-harjoitustyo.git (fetch)
+origin	git@github.com:mluukkai/ot-harjoitustyo.git (push)
 ```
 
 - _origin_ on etärepositorion oletusarvoinen nimi. Nimi voi olla mikä tahansa ja etärepositorioitakin voi olla useita
@@ -496,7 +496,7 @@ origin	git@github.com:mluukkai/otm-harjoitustyo.git (push)
 - kokeillaan
 
 ```bash
-mluukkai@melkki:~/otm-harjoitustyo$ git push --set-upstream origin master
+mluukkai@melkki:~/ot-harjoitustyo$ git push --set-upstream origin master
 Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
 Permission denied (publickey).
 fatal: Could not read from remote repository.
@@ -507,7 +507,7 @@ and the repository exists.
 
 ## Julkinen avain
 
-Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#kertausta).
+Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](https://github.com/mluukkai/Ohjelmistotekniikka2018/blob/master/tehtavat/viikko1.md#kertausta).
 
 Pushaus ei toimi. Nyt kyse on siitä, että git haluaisi suorittaa [julkisen avaimen](https://the.earth.li/~sgtatham/putty/0.55/htmldoc/Chapter8.html) autentikoinnin. Se ei kuitenkaan onnistu koska emme ole kertoneet gitille julkista salausavaintamme.
 
@@ -525,13 +525,13 @@ Pushaus ei toimi. Nyt kyse on siitä, että git haluaisi suorittaa [julkisen ava
 * Suorita uudelleen push:
 
 ```
-mluukkai@melkki:~/otm-harjoitustyo$ git push
+mluukkai@melkki:~/ot-harjoitustyo$ git push
 Counting objects: 8, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (4/4), done.
 Writing objects: 100% (8/8), 714 bytes | 0 bytes/s, done.
 Total 8 (delta 0), reused 0 (delta 0)
-To git@github.com:mluukkai/otm-harjoitustyo.git
+To git@github.com:mluukkai/ot-harjoitustyo.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 ``` 
@@ -565,7 +565,7 @@ Branch master set up to track remote branch master from origin.
   * tiedostojen urlin saat navigoimalla GitHubissa tiedostoon ja kopioimalla osoitteen selaimen osoiteriviltä 
 * Repositoriosi tulee näyttää suunnilleen seuraavalta
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v1-3.png)
+![](https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/v1-3.png)
 
 * jos teit kaiken oikein, pääset README.md:ssä olevia linkkejä klikkaamalla näkemään linkitettyjen tiedostojen sisällön
 
@@ -596,16 +596,16 @@ Branch master set up to track remote branch master from origin.
 * seurauksena on virheilmoitus
 
 ``` 
-mluukkai@melkki:~/otm-harjoitustyo$ git push
-To git@github.com:mluukkai/otm-harjoitustyo.git
+mluukkai@melkki:~/ot-harjoitustyo$ git push
+To git@github.com:mluukkai/ot-harjoitustyo.git
  ! [rejected]        master -> master (fetch first)
-error: failed to push some refs to 'git@github.com:mluukkai/otm-harjoitustyo.git'
+error: failed to push some refs to 'git@github.com:mluukkai/ot-harjoitustyo.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-mluukkai@melkki:~/otm-harjoitustyo$
+mluukkai@melkki:~/ot-harjoitustyo$
 ``` 
 
 * Tulet törmäämään tähän varmaan useasti jatkossakin.
@@ -626,7 +626,7 @@ Nyrkkisääntönä kannattaa pitää aina sitä, että kun rupeat työskentelem�
 
 ## Labtool
 
-Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin](https://tktl-labtool.herokuapp.com/register). Valitse kurssiksi _OTM-2018-4 4/18_.
+Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin](https://tktl-labtool.herokuapp.com/register). Valitse kurssiksi _Ohjelmistotekniikka_.
 
 Labtool kysyy myös harjoitustyön aihetta (=topic). Voit jättää kohdan tyhjäksi, jos et ole vielä päättänyt mitä aiot tehdä.
 
