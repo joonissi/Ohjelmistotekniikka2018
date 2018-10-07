@@ -1,7 +1,8 @@
 % Ohjelmistotekniikka
-% Matti Luukkainen, Olli Keski-Hynnnilä ja 6 ohjaajaa
+% Matti Luukkainen, Olli Keski-Hynnilä ja 6 ohjaajaa
 % 30.10.2018
-# Ohjelmistotekniikan menetelmät
+
+# Ohjelmistotekniikka
 
 - Kurssilla tutustutaan ohjelmistokehityksen periaatteisiin sekä menetelmiin ja sovelletaan niitä toteuttamalla pienehkö harjoitustyö
 - Kurssi nykyään osa _aineopintoja_
@@ -81,10 +82,14 @@ alku  ma  ti  ke  to  pe
 # Vaatimusmäärittely
 
 - Kartoitetaan ohjelman tulevien käyttäjien tai tilaajan kanssa, mitä toiminnallisuutta ohjelmaan halutaan
+
 . . .
+
 - Ohjelman toiminnalle siis määritellään asiakkaan vaatimukset
 - Tämän lisäksi kartoitetaan ohjelman toimintaympäristön ja toteutusteknologian järjestelmälle asettamia rajoitteita
+
 . . .
+
 - Tuloksena on useimmiten jonkinlainen dokumentti, johon vaatimukset kirjataan
 - Dokumentin muoto vaihtelee suuresti, se voi olla paksu mapillinen papereita tai vaikkapa joukko postit-lappuja
 
@@ -184,6 +189,9 @@ Vaatimusten kirjaamisesta voi ottaa tarkemmin mallia sovelluksen GitHub-reposito
 # Vesiputousmalli
 
 - Ohjelmistoja on 70-luvulta asti tehty vaihe vaiheelta etenevän _vesiputousmallin_ (engl. waterfall model) mukaan 
+
+. . .
+
 - Vesiputousmallissa edellä esitellyt ohjelmistotuotannon vaiheet suoritetaan peräkkäin
 ![](https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/l-1.png){ width=400 }
 
