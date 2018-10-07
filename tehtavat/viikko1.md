@@ -70,7 +70,7 @@ Komentoriviä käyttäessä kannattaa ehdottomasti totutella _tab-completen_ kä
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/tab.jpg)
 
-Tab:ia painamalla voit komentorivillä täydentää kirjoittamasi komennon nimen tai parametrin. Esim. jos olet siirtymässä hakemistoon nimeltään _ohjelmistotekniikan-menetelmat-kevat-2018_, riittää, että kirjoitat <code>cd oh</code> ja painat tabia. Jos hakemistossasi ei ole muita tiedostoja tai hakemistoja, jotka alkavat merkeillä _oh_, nimi täydentyy. Jos on, niin voit joutua kirjoittamaan merkin tai kaksi lisää. Jos tiedostoja on useampia etkä ole varma oikeasta nimestä, painamalla tabia useamman kerran näet mahdolliset vaihtoehdot.
+Tab:ia painamalla voit komentorivillä täydentää kirjoittamasi komennon nimen tai parametrin. Esim. jos olet siirtymässä hakemistoon nimeltään _ohjelmistotekniikka-syksy-2018_, riittää, että kirjoitat <code>cd oh</code> ja painat tabia. Jos hakemistossasi ei ole muita tiedostoja tai hakemistoja, jotka alkavat merkeillä _oh_, nimi täydentyy. Jos on, niin voit joutua kirjoittamaan merkin tai kaksi lisää. Jos tiedostoja on useampia etkä ole varma oikeasta nimestä, painamalla tabia useamman kerran näet mahdolliset vaihtoehdot.
 
 Myös komentojen nimet voi täydentää tab-completella. Esim. haluat avat _chromium-browser_ web-selaimen komentoriviltä, riittää että kirjoitat <code>chro</code> ja painat tabia. Komennon nimi täydentyy.
 
@@ -150,7 +150,7 @@ mluukkai@melkinpaasi:~/ot_viikko1$ touch tiedosto.txt
 mluukkai@melkinpaasi:~/ot_viikko1$ git status
 On branch master
 
-Initial commit
+No commits yet
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -172,7 +172,7 @@ mluukkai@melkinpaasi:~/ot_viikko1$ git add tiedosto.txt
 mluukkai@melkinpaasi:~/ot_viikko1$ git status
 On branch master
 
-Initial commit
+No commits yet
 
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
@@ -262,9 +262,9 @@ Tarkasta committoinnin jälkeen jälleen tilanne komennolla _git status_.
 **HUOM** jos suoritat commitoinnin vahingossa ilman commit-viestiä, eli parametria _-m_, avaa git tekstieditorin ja olettaa että haluat kirjoittaa commit-viestin editoriin. Jos et määritellyt alun ohjeen mukaan gitille editoriksi nanoa, avautuu oletusarvoinen editori _vim_ ja joudut kenties googlaamaan, miten pääset pois editorista.
 
 Tiedostot ja niihin tehdyt muutokset voivat siis olla gitin suhteen _kolmessa eri tilassa_. 
-* Aluksi tiedostot (tai niihin tehdyt muutokset) ovat vain _working directoryssä_ ja git ei noteeraa niitä ennen kuin ne lisätään komennolla <code>git add</code>. 
-* Tämän jälkeen tiedostot ovat valmiina commitoitavaksi. Gitin terminologian mukaan valmiina committoitavaksi olevat tiedostot ovat _staging_-alueella.
-*  Komento <code>git commit</code> siirtää stagingissa olevat muutokset repositorioon eli luo uuden _commitin_. 
+* Aluksi tiedostot (tai niihin tehdyt muutokset) ovat vain _working directoryssä_ ja git ei noteeraa niitä ennen kuin ne lisätään komennolla <code>git add</code>
+* Tämän jälkeen tiedostot ovat valmiina commitoitavaksi. Gitin terminologian mukaan valmiina committoitavaksi olevat tiedostot ovat _staging_-alueella
+*  Komento <code>git commit</code> siirtää stagingissa olevat muutokset repositorioon eli luo uuden _commitin_
 
 Seuraava kuva havainnollistaa sitä, miten tiedoston _tila_ vaihtuu git-komentoja tekemällä.
 
@@ -278,15 +278,15 @@ Jokainen komennon _git commit_ suorittaminen siis synnyttää repositorioon uude
 
 <pre>
 mluukkai@melkinpaasi:~/ot_viikko1$ git log
-commit 50c786fdc41104cdfe3e60845df40820feb33d40
+commit 6aff75ab51d14d7cb9a72867ba13d9782d06c7ff (HEAD -> master)
 Author: Matti Luukkainen <mluukkai@iki.fi>
-Date:   Mon Feb 7 18:18:19 2018 +0200
+Date:   Sun Oct 7 19:33:32 2018 +0300
 
-    lisäys ja muutos
+    muutos ja lisäys
 
-commit 0e12cfa5de9186eb948ac446c6b3f240ff11189d
-Author: Luukkainen Matti <mluukkai@melkinpaasi.cs.helsinki.fi>
-Date:   Mon Feb 7 16:11:33 2018 +0200
+commit 9e6a83d058c9564e8a390f8766845d45b365f360
+Author: Matti Luukkainen <mluukkai@iki.fi>
+Date:   Sun Oct 7 19:32:12 2018 +0300
 
     tiedosto.txt luotu
 mluukkai@melkinpaasi:~/ot_viikko1$
@@ -311,11 +311,14 @@ Muista käyttää komentoa _git status_ mahdollisimman usein. Älä myöskään 
 
 ## gitk
 
-Gitin committeja voi tarkastella myös graafisella _gitk_-komennolla (OSx:lle vastaavia työkaluja ovat [gitx](http://gitx.frim.nl) ja Windowsillakin toimiva [Sourcetree](https://www.sourcetreeapp.com)). Suorita komento repositoriossa:
+Gitin committeja voi tarkastella myös graafisella _gitk_-komennolla (OSX:lle ja Windowsille vastaava työkalu on [Sourcetree](https://www.sourcetreeapp.com)). Suorita komento repositoriossa:
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/lh3-1.png)
 
 Vasemmalla yläkulmassa näet kaikki commitit. Uusin tilanne ylimpänä. Uusimman commitin nimi on *master*. Klikkaamalla commitia, näet muissa ikkunoissa commitiin liittyviä tietoja. Oikealla alakulmassa näet ne tiedostot, jotka ovat muuttuneet commitissa (jos valinta on _patch_) tai ne tiedostot, joita repositoriossa oli olemassa commitin aikana (jos valinta on _tree_). Vasemmassa alakulmassa pystyt tarkastelemaan commitin tiedostoihin tekemiä muutoksia tai tiedostojen tilaa commitin aikana.  Valinnat ovat hieman hämäävät, sillä ne toimivat eri tavoin riippuen oikean puolen moodista.
+
+Vastaava näkymä OSX:n [Sourcetree](https://www.sourcetreeapp.com))-ohjelmalla tarkasteltaessa:
+(https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/lh1-1a.png)
 
 Seuraavaa tehtävää tekiessäsi kannattaa terminaaliin avata uusi välilehti, jotta voit pitää gitk:ta käynnissä.
 
@@ -326,6 +329,7 @@ Seuraavaa tehtävää tekiessäsi kannattaa terminaaliin avata uusi välilehti, 
   * valitse oikeasta alakulmasta _patch_ ja vasemmasta _diff_
   * näin näet commitin aiheuttamat muutokset [diff](https://fi.wikipedia.org/wiki/Diff)-muodossa
   * jos oikealta on valittuna _tree_, näkyy vasemmalla puolella (valinnasta riippumatta) tiedostojen commitin aikainen tilanne 
+* Jos käytät sourcetreetä, sen pitäisi päivittyä automaattisesti ja näyttää muutos _diff_-muodossa
 
 ## tiedoston poistaminen ja uudelleennimentä
 
