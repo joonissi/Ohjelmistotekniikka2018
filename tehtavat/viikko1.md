@@ -317,8 +317,9 @@ Gitin committeja voi tarkastella myös graafisella _gitk_-komennolla (OSX:lle ja
 
 Vasemmalla yläkulmassa näet kaikki commitit. Uusin tilanne ylimpänä. Uusimman commitin nimi on *master*. Klikkaamalla commitia, näet muissa ikkunoissa commitiin liittyviä tietoja. Oikealla alakulmassa näet ne tiedostot, jotka ovat muuttuneet commitissa (jos valinta on _patch_) tai ne tiedostot, joita repositoriossa oli olemassa commitin aikana (jos valinta on _tree_). Vasemmassa alakulmassa pystyt tarkastelemaan commitin tiedostoihin tekemiä muutoksia tai tiedostojen tilaa commitin aikana.  Valinnat ovat hieman hämäävät, sillä ne toimivat eri tavoin riippuen oikean puolen moodista.
 
-Vastaava näkymä OSX:n [Sourcetree](https://www.sourcetreeapp.com))-ohjelmalla tarkasteltaessa:
-(https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/lh1-1a.png)
+Vastaava näkymä OSX:n [Sourcetree](https://www.sourcetreeapp.com)-ohjelmalla tarkasteltaessa:
+
+![](https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/lh1-1a.png)
 
 Seuraavaa tehtävää tekiessäsi kannattaa terminaaliin avata uusi välilehti, jotta voit pitää gitk:ta käynnissä.
 
