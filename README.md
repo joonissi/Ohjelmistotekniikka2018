@@ -48,6 +48,16 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
   - <https://www.websequencediagrams.com/> sekvenssikaavioihin
   - <https://draw.io/> kaikki kaaviot
 
+## Pajaohjauksen aikatauluja
+Kaikki pajaohjaus tapahtuu alakerran pajaluokassa BK107, jos ohjauksiin tulee muutoksia niistä tiedotetaan kurssin Telegram-kanavalla
+
+| Kellonaika | Maanantai | Tiistai | Keskiviikko | Torstai | Perjantai |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| 10 - 12 | | | | | Hugo H
+| 12 - 14 | Teemu P | Olli K-H | Essi S
+| 14 - 16 | Olli T | Joona H | Petja V
+
+
 ## Aikataulu 
 
 ### viikko 1
