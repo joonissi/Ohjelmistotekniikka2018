@@ -1,6 +1,6 @@
 % Ohjelmistotekniikka
 % Matti Luukkainen, Olli Keski-Hynnilä ja 6 ohjaajaa
-% 30.10.2018
+% 29.10.2018
 
 # Ohjelmistotekniikka
 
@@ -31,23 +31,22 @@
 
 # Luento, deadlinet ja ohjaus
 
-- Kurssilla on vain yksi luento **nyt** eli ma 12.3. klo 14-16 B123
+- Kurssilla on vain yksi luento **nyt** eli ma 29.10. klo 14-16 B123
 - Laskareiden ja harjoitustyön välitavoitteiden viikoittaiset deadlinet _tiistaina klo 23:59_
-- Paja salissa B221
+- Paja salissa BK107
 
 alku  ma  ti  ke  to  pe
 ----  --- --- --- --- ---
-10            x
-12    x   x   x   x
-14    x   x   x   x   x
-16        x           
-18        x     
+10                     x
+12    x   x   x         
+14    x   x   x         
+16                      
+18                       
 
-- Paja alkaa huomenna (TODO: update)
+- Paja alkaa huomenna 30.10
 
 # Arvosteluperusteet
 
-- (TODO: update)
 - Jaossa 60 pistettä jotka jakautuvat seruaavasti
   - Viikkodeadlinet 17p
   - Koodikatselmointi 2p
@@ -601,8 +600,6 @@ Mitä tapahtuu, jos maksukortin saldo on 2 euroa, eli vähemmän kuin lounaan hi
 
 # Arvosteluperusteet tarkemmin
 
-(TODO: update)
-
 - Kurssin maksimi on 60 pistettä 
 - Ennen loppupalautusta jaossa 20 pistettä
   - Viikkodeadlinet 17p
@@ -616,8 +613,6 @@ Mitä tapahtuu, jos maksukortin saldo on 2 euroa, eli vähemmän kuin lounaan hi
 - Läpipääsyyn vaatimuksena on lisäksi vähintään 10 pistettä lopullisesta ohjelmasta
 
 # Harjoitustyön vaikutus kurssipisteisiin
-
-(TODO: update)
 
 Ohjelman pisteet (yht 43) jakautuvat seuraavasti
 
