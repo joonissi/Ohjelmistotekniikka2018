@@ -49,7 +49,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
   - <https://draw.io/> kaikki kaaviot
 
 ## Pajaohjauksen aikatauluja
-Kaikki pajaohjaus tapahtuu alakerran pajaluokassa BK107, jos ohjauksiin tulee muutoksia niistä tiedotetaan kurssin Telegram-kanavalla
+Kaikki pajaohjaus tapahtuu alakerran pajaluokassa BK107. Jos ohjauksiin tulee muutoksia, niistä tiedotetaan kurssin Telegram-kanavalla.
 
 | Kellonaika | Maanantai | Tiistai | Keskiviikko | Torstai | Perjantai |
 |:-:|:-:|:-:|:-:|:-:|:-:|
