@@ -47,7 +47,7 @@ alku  ma  ti  ke  to  pe
 
 # Arvosteluperusteet
 
-- Jaossa 60 pistettä jotka jakautuvat seruaavasti
+- Jaossa 60 pistettä jotka jakautuvat seuraavasti
     - Viikkodeadlinet 17p
     - Koodikatselmointi 2p
     - Dokumentaatio	10p   
@@ -240,9 +240,9 @@ Teemme kurssin harjoitustyötä ketterässä hengessä viikon mittaisilla iteraa
 
 # Työkaluja
 
-- Tarvitsemme ohjelmisokehityksessä suuren joukon käytännön työkaluja. 
+- Tarvitsemme ohjelmistokehityksessä suuren joukon käytännön työkaluja. 
 - Komentorivi ja Versionhallinta
-    - Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja git-versionohallintaa
+    - Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja git-versionhallintaa
     - molemmat ovat tärkeässä roolissa ohjelmistokehityksessä
     - harjoitellaan viikon 1 laskareissa
 
@@ -358,7 +358,7 @@ public class Todo {
 # Riippuvuus
 
 - UML-kaavioissa olevat "viivat" kuvaavat luokkien olioiden välistä _pysyvää yhteyttä_
-- Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli _riippiipuvuus_
+- Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli _riippuvuus_
 
 . . .
 
@@ -622,7 +622,7 @@ Ohjelman pisteet (yht 43) jakautuvat seuraavasti
     - 2-3p yksinkertainen graafinen käyttöliittymä
     - 4p laaja graafinen käyttöliittymä
 - tiedon pysyväistalletus 4p
-    - ei pysyväistalletusta
+    - 0p ei pysyväistalletusta
     - 1-2p tiedosto 
     - 3-4p tietokanta
     - 3-4p internet
