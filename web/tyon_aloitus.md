@@ -14,8 +14,6 @@ Harjoitustyön ohjelmointikieli on Java.
 
 Web-sovelluksia kurssilla ei sallita. Sovelluksissa sallitaan toki webissä olevat komponentit, mutta sovelluksen käyttöliittymän tulee olla ns. desktop-sovellus.
 
-Muuta kuin Javaa käytettäessä ohjaus saattaa olla "huonompaa", sillä kurssihenkilökunnan kokemus vaihtoehtoisilla kielillä tehtävistä desktop-sovelluksista on rajallinen.
-
 **Ohjelmakoodin muuttujat, luokat ja metodit kirjoitetaan englanniksi.** Dokumentaatio voidaan kirjoittaa joko suomeksi tai englanniksi. 
 
 ## Ohjelman toteutus
