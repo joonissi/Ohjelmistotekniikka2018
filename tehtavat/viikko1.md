@@ -42,7 +42,7 @@ Tulet tarvitsemaan komentorivin käyttötaitoja tällä kurssilla ja muutenkin o
 
 Ota ssh-yhteys linuxpalvelimeen _melkki.cs.helsinki.fi_, _melkinpaasi.cs.helsinki.fi_ tai _melkinkari.cs.helsinki.fi_. Linuxilla ja macilla yhteys otetaan komentoriviltä komennolla _ssh kayttajatunnus@palvelimenosoite_. Windowsilla ssh-yhteyden ottaminen onnistuu esimerkiksi [putty:llä](http://www.putty.org).
 
-Sisäänkirjautuminen Melkille tapahtuu käyttäen yliopiston AD-tunnuksia.
+Sisäänkirjautuminen Melkille tapahtuu käyttäen yliopiston AD-tunnuksia, eli siis samoja joita käytetään esim. weboodiin kirjautuessa.
 
 Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 * luo kotihakemistoosi hakemisto _kurssit_
