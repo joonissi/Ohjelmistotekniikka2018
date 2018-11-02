@@ -156,7 +156,7 @@ public class Kassapaate {
 Avaa terminaali, mene palautusrepositoriosi hakemistoon _laskarit/viikko2_ ja suorita seuraavat komennot:
 
 ```bash
-wget https://raw.githubusercontent.com/mluukkai/otm-2018/master/misc/Unicafe.zip
+wget https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/misc/Unicafe.zip
 unzip Unicafe.zip
 rm Unicafe.zip
 ```
