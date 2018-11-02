@@ -334,11 +334,11 @@ Useilla selaimilla tämä tapahtuu komennolla __open file__. Laitoksen koneella 
 
 Maven-komentoja on mahdollista suorittaa myös NetBeansin kautta. Tämä tapahtuu klikkaamalla projektin kohdalla hiiren oikealla napilla: 
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-6.png" width="600">
+<img src="https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/v2-6.png" width="600">
 
 "Remember as"-toiminnolla voit tallettaa konfiguroidun maven-komentosarjan:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-5.png" width="600">
+<img src="https://raw.githubusercontent.com/mluukkai/Ohjelmistotekniikka2018/master/web/images/v2-5.png" width="600">
 
 ## 4 Maven-projektin hakemistorakenne
 
