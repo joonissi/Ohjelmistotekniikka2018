@@ -17,7 +17,7 @@ Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteit
 
 ## 1 
 
-* tutustu [JUnit-ohjeeseen](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md)
+* tutustu [JUnit-ohjeeseen](https://github.com/mluukkai/Ohjelmistotekniikka2018/blob/master/web/junit.md)
 * lukiessasi tee testit myös itse
 * lisää lopuksi maksukortille seuraavat testit:
   * maukkaan lounaan syöminen ei vie saldoa negatiiviseksi, ota tähän mallia testistä syoEdullisestiEiVieSaldoaNegatiiviseksi
